@@ -10,6 +10,7 @@ Route::get('/', function () {
 //Route::get('user', [UserController::class, 'getUser']);
 Route::get('profile', [UserController::class, 'getProfile']);
 Route::get('username/{name}', [UserController::class, 'getusername']);
+Route::post('adduser', [UserController::class, 'adduser']);
 
  Route::get('/home', function () {
      return view('home');

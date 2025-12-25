@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class UserController extends Controller
 {
     //
@@ -16,4 +17,8 @@ class UserController extends Controller
     function getusername($name){ 
         return "Hello Username . " . $name;
     }
+    function adduser(Request $request){ 
+        return "User Added . " . $request->input('name');
+        }
+    
 }
